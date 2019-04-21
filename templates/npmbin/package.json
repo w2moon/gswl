@@ -1,0 +1,32 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "nyc --exclude '**/*.d.ts' -e .ts --include 'src/**/*.ts' --all mocha --timeout 5000 --require ts-node/register test/**/*.ts",
+    "build": "tsc"
+  },
+  "bin": {
+    "<%= name %>": "./dist/bin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.3",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@log4js2/core": "^2.0.8",
+    "commander": "^2.19.0",
+    "log4js": "^4.1.0"
+  }
+}

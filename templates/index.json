@@ -1,0 +1,9 @@
+[
+  { "name": "unityjs", "desc": "Unity JS空工程", "path": "templates/unityjs" },
+  {
+    "name": "npmbin",
+    "desc": "npm可执行命令行工程",
+    "path": "templates/npmbin"
+  },
+  { "name": "npmpkg", "desc": "npm包工程", "path": "templates/npmpkg" }
+]

@@ -1,0 +1,14 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "rules": {
+    "no-redundant-jsdoc": true,
+    "trailing-comma": false,
+    "prefer-object-spread": true,
+    "arrow-parens": false,
+    "jsdoc-format": [true, "check-multiline-start"],
+    "completed-docs": true
+  },
+  "rulesDirectory": []
+}

@@ -1,0 +1,50 @@
+{
+  "name": "gswl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "nyc --exclude '**/*.d.ts' -e .ts --include 'src/**/*.ts' --all mocha --timeout 5000 --require ts-node/register test/**/*.ts",
+    "build": "tsc"
+  },
+  "bin": {
+    "gswl": "./dist/bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w2moon/imgutil.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w2moon/imgutil/issues"
+  },
+  "homepage": "https://github.com/w2moon/imgutil#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.3",
+    "@types/prompts": "^1.2.0",
+    "@types/through2": "^2.0.34",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "ora": "^3.4.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@log4js2/core": "^2.0.8",
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "isbinaryfile": "^4.0.0",
+    "lodash": "^4.17.11",
+    "log4js": "^4.1.0",
+    "prompts": "^2.0.4",
+    "recursive-copy": "^2.0.10",
+    "rimraf": "^2.6.3",
+    "through2": "^3.0.1"
+  }
+}

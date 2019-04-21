@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/w2moon/imgutil.git"
+    "url": "git+https://github.com/w2moon/gswl.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/w2moon/imgutil/issues"
+    "url": "https://github.com/w2moon/gswl/issues"
   },
-  "homepage": "https://github.com/w2moon/imgutil#readme",
+  "homepage": "https://github.com/w2moon/gswl#readme",
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",

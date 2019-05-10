@@ -32,8 +32,9 @@ async function buildFromLocalTemplate(name: string, info: TemplateInfo) {
   spanner.start();
 
   return new Promise(resolve => {
-    if (!fs.existsSync(info.path)) {
-      spanner.fail(chalk.redBright(`模版目录不存在:${info.path}`));
+    const srcPath = path.resolve(__dirname, info.path);
+    if (!fs.existsSync(srcPath)) {
+      spanner.fail(chalk.redBright(`模版目录不存在:${srcPath}`));
       resolve();
       return;
     }
@@ -43,7 +44,7 @@ async function buildFromLocalTemplate(name: string, info: TemplateInfo) {
         resolve();
         return;
       }
-      copy(info.path, projPath, {
+      copy(srcPath, projPath, {
         transform: (src: string, desc: string, stats: any) => {
           return through2(async (chunk, enc, done) => {
             if (await isBinaryFile(chunk)) {

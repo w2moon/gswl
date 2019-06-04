@@ -1,14 +1,10 @@
 import chalk from "chalk";
-import fs from "fs";
 import _ from "lodash";
 import ora from "ora";
-import path from "path";
 import prompts from "prompts";
-import rimraf from "rimraf";
-import through2 from "through2";
 import { getLogger } from "../logger";
 
-const logger = getLogger("<%= name % >");
+const logger = getLogger("<%= name %>");
 
 export default async (template: string, args: { [index: string]: string }) => {
   const res = await prompts({

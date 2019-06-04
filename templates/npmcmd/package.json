@@ -1,6 +1,6 @@
 {
-  "name": "gswl",
-  "version": "1.0.15",
+  "name": "<%= name %>",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -9,26 +9,16 @@
     "build": "tsc"
   },
   "bin": {
-    "gswl": "./dist/src/bin.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/w2moon/gswl.git"
+    "<%= name %>": "./dist/src/bin.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/w2moon/gswl/issues"
-  },
-  "homepage": "https://github.com/w2moon/gswl#readme",
   "devDependencies": {
     "@sanzaru/autover": "^0.0.7",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
     "@types/node": "^11.11.3",
-    "@types/prompts": "^1.2.0",
-    "@types/through2": "^2.0.34",
     "chai": "^4.2.0",
     "mocha": "^6.0.2",
     "nyc": "^13.3.0",
@@ -37,7 +27,6 @@
     "typescript": "^3.3.3333"
   },
   "dependencies": {
-    "@log4js2/core": "^2.0.8",
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
     "isbinaryfile": "^4.0.0",

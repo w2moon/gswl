@@ -32,7 +32,7 @@ async function buildFromLocalTemplate(name: string, info: TemplateInfo) {
   spanner.start();
 
   return new Promise(resolve => {
-    const srcPath = path.resolve(__dirname, info.path);
+    const srcPath = path.resolve(__dirname, "../../..", info.path);
     if (!fs.existsSync(srcPath)) {
       spanner.fail(chalk.redBright(`模版目录不存在:${srcPath}`));
       resolve();

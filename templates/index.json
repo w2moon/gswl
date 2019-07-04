@@ -8,7 +8,7 @@
   {
     "name": "npmcmd",
     "desc": "npm可执行命令行工程，无子命令直接加命令。例如： testbin 参数",
-    "path": "templates/npmbin"
+    "path": "templates/npmcmd"
   },
   { "name": "npmpkg", "desc": "npm包工程", "path": "templates/npmpkg" }
 ]

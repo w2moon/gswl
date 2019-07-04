@@ -7,8 +7,8 @@ export function configure(level: string) {
   log4js.configure({
     appenders: { normal: { type: "Console" } },
     categories: {
-      <%= name  %> : { appenders: ["normal"], level },
-      default: { appenders: ["normal"], level };
+      <%= name %> : { appenders: ["normal"], level },
+      default: { appenders: ["normal"], level }
     }
   })
 }
